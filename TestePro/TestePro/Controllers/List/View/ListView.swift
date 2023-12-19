@@ -10,6 +10,17 @@ import UIKit
 
 class ListView: UIView {
     
+    let loading: UIActivityIndicatorView = {
+        let load = UIActivityIndicatorView()
+        load.translatesAutoresizingMaskIntoConstraints = false
+        load.frame.size = CGSize(width: 50, height: 50)
+        let scale = CGAffineTransform(scaleX: 2, y: 2)
+        load.transform = scale
+        load.color = .blue
+        load.backgroundColor = .clear
+        return load
+    }()
+    
     let myTableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -30,6 +41,7 @@ class ListView: UIView {
     
     func addElementsVisual() {
         addSubview(myTableView)
+        addSubview(loading)
     }
     
     func configConstraints() {
@@ -37,7 +49,10 @@ class ListView: UIView {
             myTableView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
             myTableView.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor),
             myTableView.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor),
-            myTableView.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor)
+            myTableView.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor),
+            
+            loading.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+            loading.centerYAnchor.constraint(equalTo: self.centerYAnchor)
         ])
     }
     
