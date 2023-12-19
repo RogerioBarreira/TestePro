@@ -14,6 +14,8 @@
 		B6CE2F992B311DD50068DC5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6CE2F972B311DD50068DC5F /* LaunchScreen.storyboard */; };
 		B6CE2FA62B311E400068DC5F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CE2FA52B311E400068DC5F /* Coordinator.swift */; };
 		B6CE2FAA2B3121210068DC5F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CE2FA92B3121210068DC5F /* DetailViewController.swift */; };
+		B6CE2FAC2B312F980068DC5F /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CE2FAB2B312F980068DC5F /* ListView.swift */; };
+		B6CE2FAF2B3131F10068DC5F /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CE2FAE2B3131F10068DC5F /* ListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		B6CE2F9A2B311DD50068DC5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6CE2FA52B311E400068DC5F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		B6CE2FA92B3121210068DC5F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B6CE2FAB2B312F980068DC5F /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		B6CE2FAE2B3131F10068DC5F /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 		B6CE2FA22B311E0C0068DC5F /* List */ = {
 			isa = PBXGroup;
 			children = (
+				B6CE2FAD2B3131E30068DC5F /* Cell */,
 				B6CE2FA32B311E150068DC5F /* View */,
 			);
 			path = List;
@@ -97,6 +102,7 @@
 		B6CE2FA32B311E150068DC5F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B6CE2FAB2B312F980068DC5F /* ListView.swift */,
 				B6CE2F902B311DD30068DC5F /* ListViewController.swift */,
 			);
 			path = View;
@@ -124,6 +130,14 @@
 				B6CE2FA92B3121210068DC5F /* DetailViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B6CE2FAD2B3131E30068DC5F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B6CE2FAE2B3131F10068DC5F /* ListCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +212,8 @@
 			files = (
 				B6CE2FA62B311E400068DC5F /* Coordinator.swift in Sources */,
 				B6CE2F912B311DD30068DC5F /* ListViewController.swift in Sources */,
+				B6CE2FAC2B312F980068DC5F /* ListView.swift in Sources */,
+				B6CE2FAF2B3131F10068DC5F /* ListCell.swift in Sources */,
 				B6CE2FAA2B3121210068DC5F /* DetailViewController.swift in Sources */,
 				B6CE2F8D2B311DD30068DC5F /* AppDelegate.swift in Sources */,
 				B6CE2F8F2B311DD30068DC5F /* SceneDelegate.swift in Sources */,
