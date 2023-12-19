@@ -14,6 +14,7 @@
 		B6CE2F992B311DD50068DC5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6CE2F972B311DD50068DC5F /* LaunchScreen.storyboard */; };
 		B6CE2FA62B311E400068DC5F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CE2FA52B311E400068DC5F /* Coordinator.swift */; };
 		B6CE2FAA2B3121210068DC5F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CE2FA92B3121210068DC5F /* DetailViewController.swift */; };
+		B6CE2FB32B3135040068DC5F /* ServiceGenerics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CE2FB22B3135040068DC5F /* ServiceGenerics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B6CE2F9A2B311DD50068DC5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6CE2FA52B311E400068DC5F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		B6CE2FA92B3121210068DC5F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B6CE2FB22B3135040068DC5F /* ServiceGenerics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceGenerics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		B6CE2F8B2B311DD30068DC5F /* TestePro */ = {
 			isa = PBXGroup;
 			children = (
+				B6CE2FB02B3134E30068DC5F /* WebService */,
 				B6CE2FA42B311E330068DC5F /* Coordinator */,
 				B6CE2FA12B311E040068DC5F /* Controllers */,
 				B6CE2FA02B311DF00068DC5F /* Resources */,
@@ -124,6 +127,22 @@
 				B6CE2FA92B3121210068DC5F /* DetailViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B6CE2FB02B3134E30068DC5F /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				B6CE2FB12B3134EB0068DC5F /* ServiceGeneric */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		B6CE2FB12B3134EB0068DC5F /* ServiceGeneric */ = {
+			isa = PBXGroup;
+			children = (
+				B6CE2FB22B3135040068DC5F /* ServiceGenerics.swift */,
+			);
+			path = ServiceGeneric;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +218,7 @@
 				B6CE2FA62B311E400068DC5F /* Coordinator.swift in Sources */,
 				B6CE2F912B311DD30068DC5F /* ListViewController.swift in Sources */,
 				B6CE2FAA2B3121210068DC5F /* DetailViewController.swift in Sources */,
+				B6CE2FB32B3135040068DC5F /* ServiceGenerics.swift in Sources */,
 				B6CE2F8D2B311DD30068DC5F /* AppDelegate.swift in Sources */,
 				B6CE2F8F2B311DD30068DC5F /* SceneDelegate.swift in Sources */,
 			);
