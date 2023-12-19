@@ -1,19 +1,17 @@
 //
-//  ListViewController.swift
+//  DetailViewController.swift
 //  TestePro
 //
 //  Created by Rogerio Martins on 18/12/23.
 //
 
+import Foundation
 import UIKit
 
-class ListViewController: UIViewController {
-
+class DetailViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+        self.view.backgroundColor = .red
     }
-
-
 }
-
